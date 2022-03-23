@@ -24,6 +24,8 @@ class Post {
       }
     });
   }
+
+
   static create(postObject) {
     return new Promise(async (res, rej) => {
       try {
@@ -40,6 +42,7 @@ class Post {
       }
     });
   }
+
 }
 // CREATE TABLE posts(
 //     id serial PRIMARY KEY,
