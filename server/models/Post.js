@@ -1,4 +1,5 @@
 const db = require("../dbConfig/init");
+const User = require("./User");
 
 class Post {
   constructor(data) {
@@ -23,6 +24,28 @@ class Post {
       }
     });
   }
+  static create(postObject) {
+    return new Promise(async (res, rej) => {
+      try {
+        const { title, content, name } = postObject;
+        const user = await User.create({ name });
+        const result = await db.query(
+          `INSERT INTO posts (title,content,user_id)
+          values($1,$2,$3) RETURNING *;`,
+          [title, content, user.id]
+        );
+        res(result.rows[0]);
+      } catch (error) {
+        rej(`Error creating new post ${error}`);
+      }
+    });
+  }
 }
+// CREATE TABLE posts(
+//     id serial PRIMARY KEY,
+//     title varchar(100) NOT NULL,
+//     content varchar(500) NOT NULL,
+//     user_id int
+//   );
 
 module.exports = Post;
