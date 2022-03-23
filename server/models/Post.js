@@ -28,7 +28,7 @@ class Post {
     return new Promise(async (res, rej) => {
       try {
         const { title, content, name } = postObject;
-        const user = await User.create({ name });
+        const user = await User.findOrCreateByName(name);
         const result = await db.query(
           `INSERT INTO posts (title,content,user_id)
           values($1,$2,$3) RETURNING *;`,
