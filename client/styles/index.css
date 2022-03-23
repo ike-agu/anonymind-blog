@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+form {
+  padding: 1rem;
+  background-color: #ccc;
+  margin-bottom: 1rem;
+  margin: 0 auto;
+  width: 40%;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+input[type="text"],
+textarea {
+  border-radius: 5px;
+  border: none;
+  padding: 0.4rem;
+  margin-bottom: 1rem;
+}
+
+input[type="submit"] {
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: none;
+}
+.card {
+  background-color: #ccc;
+  padding: 1rem;
+  border-radius: 25px;
+  max-width: 75ch;
+  margin-bottom: 1rem;
+}
+
+.card--title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card--name {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card--content {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
