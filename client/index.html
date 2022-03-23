@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/index.css" />
     <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <script defer src="./js/form.js"></script>
+    <script defer src="./js/main.js"></script>
     <title>Anonymind</title>
   </head>
   <body>
@@ -33,16 +34,17 @@
       </form>
     </section>
 
+    <section class="post-container"></section>
     <script id="template--all" type="text/x-handlebars-template">
+        {{#each .}}
       <section class="card">
-        <h2 class="card--title">Test Title</h2>
-        <h3 class="card--name">Rakib</h3>
+        <h2 class="card--title">{{title}}</h2>
+        <h3 class="card--name">{{name}}</h3>
         <p class="card--content">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum nulla
-          repudiandae pariatur non, doloremque voluptatibus quisquam consequatur
-          esse doloribus officiis?
+          {{content}}
         </p>
       </section>
+      {{/each}}
     </script>
   </body>
 </html>
