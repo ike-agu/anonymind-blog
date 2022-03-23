@@ -19,19 +19,6 @@ static get all(){
   })
 }
 
-static create ({name}){
-  return new Promise(async (res,rej) =>{
-    try {
-      let newUser = await db.query(SQL`INSERT INTO users (name) VALUES(${name}) RETURNING *;`);
-    let user = new User(newUser.rows[0]);
-    res(user)
-    } catch (err) {
-      rej(`Error creating user: ${err}`)
-    }
-
-  })
-}
-
 }
 
 module.exports = User
