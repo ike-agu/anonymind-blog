@@ -4,7 +4,19 @@
   box-sizing: border-box;
 }
 
+header {
+  background-color: #ccc;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 body {
+  margin: 0;
+}
+header h1,
+header h2 {
+  margin: 0;
 }
 
 form {
@@ -13,7 +25,9 @@ form {
   margin-bottom: 1rem;
   margin: 0 auto;
   width: 40%;
+  margin-top: 3rem;
   margin-bottom: 1rem;
+  border-radius: 10px;
   text-align: center;
 }
 
@@ -21,6 +35,7 @@ input[type="text"],
 textarea {
   border-radius: 5px;
   border: none;
+  width: 100%;
   padding: 0.4rem;
   margin-bottom: 1rem;
 }
@@ -35,6 +50,7 @@ input[type="submit"] {
   padding: 1rem;
   border-radius: 25px;
   max-width: 75ch;
+  width: 30%;
   margin-bottom: 1rem;
 }
 
@@ -51,4 +67,11 @@ input[type="submit"] {
 .card--content {
   margin: 0;
   margin-bottom: 0.5rem;
+}
+
+.post-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.3rem;
+  justify-content: space-between;
 }
