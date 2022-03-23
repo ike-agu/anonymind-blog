@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+    <script defer src="./js/form.js"></script>
+    <script defer src="./js/main.js"></script>
+    <title>Anonymind</title>
+  </head>
+  <body>
+    <h1>welcome to anonymind from client side we are good to go</h1>
+
+    <section class="form-container">
+      <form class="form">
+        <div class="form--group">
+          <input type="text" id="title" required placeholder="title" />
+        </div>
+        <div class="form--group">
+          <input type="text" id="name" required placeholder="name" />
+        </div>
+        <div class="form--group">
+          <textarea
+            type="text"
+            id="content"
+            required
+            placeholder="Describe yourself here..."
+          >
+          </textarea>
+        </div>
+        <input type="submit" />
+      </form>
+    </section>
+
+    <section class="post-container"></section>
+    <script id="template--all" type="text/x-handlebars-template">
+        {{#each .}}
+      <section class="card">
+        <h2 class="card--title">{{title}}</h2>
+        <h3 class="card--name">{{name}}</h3>
+        <p class="card--content">
+          {{content}}
+        </p>
+      </section>
+      {{/each}}
+    </script>
+  </body>
+</html>
