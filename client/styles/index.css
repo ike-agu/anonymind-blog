@@ -1,0 +1,30 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+.card {
+  background-color: #ccc;
+  padding: 1rem;
+  border-radius: 25px;
+  max-width: 75ch;
+}
+
+.card--title {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card--name {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.card--content {
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
