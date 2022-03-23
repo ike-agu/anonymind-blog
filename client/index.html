@@ -12,14 +12,21 @@
 
     <section class="form">
       <form class="form">
-        <label for="title">Title</label>
-        <input type="text" id="title" required placeholder="title" />
-        <label for="name">name</label>
-        <input type="text" id="name" required placeholder="name" />
-
-        <label for="title">Content</label>
-        <textarea type="text" id="content" required placeholder="content">
-        </textarea>
+        <div class="form--group">
+          <input type="text" id="title" required placeholder="title" />
+        </div>
+        <div class="form--group">
+          <input type="text" id="name" required placeholder="name" />
+        </div>
+        <div class="form--group">
+          <textarea
+            type="text"
+            id="content"
+            required
+            placeholder="Describe yourself here..."
+          >
+          </textarea>
+        </div>
         <input type="submit" />
       </form>
     </section>
