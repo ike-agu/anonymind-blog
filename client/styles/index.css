@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merriweather&family=Open+Sans:wght@300;400;700&family=Poppins&display=swap');
+
 *,
 *::after,
 *::before {
@@ -17,6 +19,8 @@ body {
 header h1,
 header h2 {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(92, 38, 38);
 }
 
 form {
@@ -42,8 +46,9 @@ textarea {
 
 input[type="submit"] {
   padding: 0.4rem;
-  border-radius: 5px;
+  border-radius: 50px;
   border: none;
+  width: 8em;
 }
 .card {
   background-color: #ccc;
@@ -57,11 +62,13 @@ input[type="submit"] {
 .card--title {
   margin: 0;
   margin-bottom: 0.5rem;
+  font-size: 25px;
 }
 
 .card--name {
   margin: 0;
   margin-bottom: 0.5rem;
+  font-size: 22px;
 }
 
 .card--content {
@@ -75,3 +82,17 @@ input[type="submit"] {
   padding: 0.3rem;
   justify-content: space-between;
 }
+
+
+
+.card h3, h4{
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(70, 54, 54);
+}
+
+.card p{
+  font-family: 'Merriweather', serif;
+  color:  rgb(92, 38, 38);
+
+}
+
