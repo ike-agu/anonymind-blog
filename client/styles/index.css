@@ -21,6 +21,7 @@ header h2 {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   color: rgb(92, 38, 38);
+
 }
 
 form {
@@ -83,6 +84,7 @@ input[type="submit"] {
   justify-content: space-between;
 }
 
+
 .card h3, h4{
   font-family: 'Open Sans', sans-serif;
   color: rgb(70, 54, 54);
@@ -93,3 +95,5 @@ input[type="submit"] {
   color:  rgb(92, 38, 38);
 
 }
+
+
