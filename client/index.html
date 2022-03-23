@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
     <title>Anonymind</title>
   </head>
   <body>
@@ -31,14 +32,16 @@
       </form>
     </section>
 
-    <section class="card">
-      <h2 class="card--title">Test Title</h2>
-      <h3 class="card--name">Rakib</h3>
-      <p class="card--content">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum nulla
-        repudiandae pariatur non, doloremque voluptatibus quisquam consequatur
-        esse doloribus officiis?
-      </p>
-    </section>
+    <script id="template--all" type="text/x-handlebars-template">
+      <section class="card">
+        <h2 class="card--title">Test Title</h2>
+        <h3 class="card--name">Rakib</h3>
+        <p class="card--content">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum nulla
+          repudiandae pariatur non, doloremque voluptatibus quisquam consequatur
+          esse doloribus officiis?
+        </p>
+      </section>
+    </script>
   </body>
 </html>
