@@ -11,6 +11,6 @@ server.use("/users", userRoutes);
 const postRoutes = require("./controllers/posts");
 server.use("/posts", postRoutes);
 
-server.get("/", (req, res) => res.send("Welcome to anonymind"));
+server.get("/", (req, res) => res.send("Welcome to Anonymind-blog share your anonymous thoughts"));
 
 module.exports = server;
